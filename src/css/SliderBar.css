@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#body-pd {
+  transition: margin-left 0.3s;
+}
+
+/* Header styles */
+.header {
+  background-color: #28a745; /* Shopping-related green */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header_signout .nav_link {
+  display: flex;
+  align-items: center;
+  color: #fff; 
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header_signout .nav_link i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Sidebar (l-navbar) styles */
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #17a2b8; /* Calming blue-green */
+  color: #fff;
+  padding-top: 20px;
+  transition: transform 0.3s;
+  transform: translateX(-250px);
+}
+
+.l-navbar.show {
+  transform: translateX(0);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_logo-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.nav_logo-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav_list {
+  margin-top: 20px;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.nav_link:hover {
+  background-color: #ffc107; /* Bright yellow for hover */
+  border-radius: 20px;
+}
+
+.nav_icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.nav_name {
+  font-size: 16px;
+}
+
+/* Adjustments for SignOut button inside sidebar */
+.nav_link:last-child {
+  margin-top: auto;
+  /* Optional: Add border for better separation */
+  /* border-top: 1px solid #444; */
+}
+
+/* Toggle icon styles */
+.header_toggle i.bx-x,
+.header_toggle i.bx-menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .l-navbar {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .l-navbar.show {
+    transform: translateX(0);
+  }
+
+  .header_toggle {
+    font-size: 20px;
+  }
+
+  .nav_logo-name {
+    font-size: 16px;
+  }
+
+  .nav_icon {
+    font-size: 18px;
+  }
+
+  .nav_name {
+    font-size: 14px;
+  }
+}
