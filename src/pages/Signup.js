@@ -39,7 +39,7 @@ function Signup() {
           </div>
           <div className="signup-inputBox">
             <input type="number" required="required" />
-            <span>Contact</span>
+            <span>Phone No</span>
             <i></i>
           </div>
           <div className="signup-links">

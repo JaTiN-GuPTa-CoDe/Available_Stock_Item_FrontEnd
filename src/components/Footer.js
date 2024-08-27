@@ -22,9 +22,9 @@ const Footer = () => {
             <h4>Get in Touch</h4>
             <ul className='Get-in-touch'>
               <li>Address: Gwalior</li>
-              <li>Phone: +91 9981506307</li>
+              <li>Phone: +91 8770051070</li>
               <li>Email: <a href="mailto:jating673@gmail.com">jating673@gmail.com</a></li>
-              <li>Office Hours: Monday to Friday: 9:00 AM - 5:00 PM GMT </li>
+              <li>Contact : Monday to Friday: 9:00 AM - 5:00 PM</li>
             </ul>
           </div>
           

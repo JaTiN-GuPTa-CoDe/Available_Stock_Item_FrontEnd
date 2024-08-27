@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="navbar-header"> 
+      <header className="navbar-header">
         <nav>
           <h2><Link to="/">Logo</Link></h2>
           <button className="menu-toggle" onClick={toggleMenu}>
