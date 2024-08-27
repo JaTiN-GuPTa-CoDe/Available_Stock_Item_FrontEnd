@@ -8,12 +8,13 @@ function Signup() {
   return (
     <>
       <NavBar />
+      <div className="center-wrapper">
       <div className="signup-box">
         <div className="signup-form">
           <h2>Sign Up</h2>
           <div className="signup-inputBox">
             <input type="text" required="required" />
-            <span>Username</span>
+            <span>Name</span>
             <i></i>
           </div>
           <div className="signup-inputBox">
@@ -26,11 +27,27 @@ function Signup() {
             <span>Password</span>
             <i></i>
           </div>
+          <div className="signup-inputBox">
+            <input type="text" required="required" />
+            <span>Shop Name</span>
+            <i></i>
+          </div>
+          <div className="signup-inputBox">
+            <input type="text" required="required" />
+            <span>Address</span>
+            <i></i>
+          </div>
+          <div className="signup-inputBox">
+            <input type="number" required="required" />
+            <span>Contact</span>
+            <i></i>
+          </div>
           <div className="signup-links">
             <Link to="/login">Already have an account? Login</Link>
           </div>
           <input type="submit" value="Sign Up" />
         </div>
+      </div>
       </div>
       <Footer />
     </>

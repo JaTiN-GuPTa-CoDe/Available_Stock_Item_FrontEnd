@@ -1,36 +1,38 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import React from 'react';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import '../css/Login.css'
+import '../css/Login.css';
 
 function Login() {
   return (
     <>
-     <NavBar />
-     <div class="box">
-            <div class="form">
-                <h2>Login</h2>
-                <div class="inputBox">
-                    <input type="text" required="required"/>
-                    <span>Username</span>
-                    <i></i>
-                </div>
-                <div class="inputBox">
-                    <input type="password" required="required"/>
-                    <span>Password</span>
-                    <i></i>
-                </div>
-                <div class="links">
-                    {/* <a href="https://akhs1.com/">Forgot password?</a> */}
-                    <Link to="/signup">Sign Up</Link>
-                </div>
-                <a href="https://akhs1.com/"><input type="submit" value="Login"/></a>
+      <NavBar />
+      <div className="center-wrapper">
+        <div className="box">
+          <div className="form">
+            <h2>Login</h2>
+            <div className="inputBox">
+              <input type="text" required="required" />
+              <span>Email</span>
+              <i></i>
             </div>
+            <div className="inputBox">
+              <input type="password" required="required" />
+              <span>Password</span>
+              <i></i>
+            </div>
+            <div className="links">
+              {/* <a href="https://akhs1.com/">Forgot password?</a> */}
+              <Link to="/signup">Sign Up</Link>
+            </div>
+            <a><input type="submit" value="Login" /></a>
+          </div>
         </div>
-      <Footer/>
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Login
+export default Login;
